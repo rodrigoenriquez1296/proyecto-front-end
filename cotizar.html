@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilo_cotizar.css">
+  <link rel="stylesheet" href="estiloindex.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,600;1,400&family=Carter+One&display=swap" rel="stylesheet">
+  <title>BIKES REPAIR</title>
+</head>
+<body>
+
+
+  <header class="ancho">
+    <figure>
+      <img src="imagenes/Logo.png" alt="">
+    </figure>
+    <article>
+      <h1>¿NECESITAS AYUDA? !CONTACTANOS¡</h1>
+      <div>
+      <h2><i class="fas fa-envelope"></i>info@demolink.com</h2>
+      <h2><i class="fas fa-mobile-alt"></i>0180023456789</h2>
+    </div>
+    </article>
+  </header>
+
+  <nav class="ancho wow animate__animated animate__bounceInDown">
+    <div id="menu">
+      <i class="fas fa-bars"></i>
+    </div>
+
+    <ul class="contmenu" id="contenedormenu">
+      <li><a href="index.html" class="btn_ancla">INICIO</a></li>
+      <li><a href="servicio.html" class="btn_ancla">SERVICIOS</a></li>
+      <li><a href="nosotros.html" class="btn_ancla">NOSOTROS</a></li>
+      <li><a href="cotizar.html" class="btn_ancla">COTIZAR</a></li>
+    </ul>
+    </nav>
+
+  <section class="formulario ancho">
+  <form name="frmcotiza" action="correos.php" method="post">
+    <div class="form">
+        <h1>COTIZAR</h1>
+        <div class="grupo">
+            <input type="text" name="nombre" id="" required><span class="barra"></span>
+            <label>Nombre</label>
+        </div>
+        <div class="grupo">
+            <input type="text" name="correo" id="" required><span class="barra"></span>
+            <label>Correo</label>
+        </div>
+        <div class="grupo">
+            <input type="text" name="modelo" id="" required><span class="barra"></span>
+            <label>Indique el modelo del vehiculo</label>
+        </div>
+
+        <div class="grupo">
+          <input type="text" name="servicio" id="" required><span class="barra"></span>
+          <label>Indique el servicio que requiere</label>
+      </div>
+        <div class="grupo">
+            <textarea name="descripcion" id="" rows="3" required></textarea><span class="barra"></span>
+            <label>Breve descripcion de su problema</label>
+        </div>
+        <button type="submit">Enviar</button>
+    </div>
+</form>
+
+</section>
+
+<script src='https://code.jquery.com/jquery-3.5.1.min.js'></script>
+
+<script src="funciones.js"></script>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<script src="https://wowjs.uk/dist/wow.min.js"></script>
+
+</body>
+</html>

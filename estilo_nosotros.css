@@ -1,0 +1,238 @@
+:root{
+  --oscuro: #2D3134;
+  --naranja:#FF5639;
+  --grisfuerte:#707070;
+  --grismedio:#AFAFAF;
+  --grisbajo:#EFEFEF;
+  --oscuro:#2D3134;
+  --amarillo:#D7EF00;
+  --textogrande:60px;
+}
+
+.video{
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+ #contenedoryoutube{
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+
+ #contenedoryoutube iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#slider1 {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cont_flechas {
+  width: 120px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: auto;
+  border: 1px yellow solid;
+}
+.buttons {
+  color: #800000;
+  text-decoration: none;
+  font-size: 40px;
+}
+.viewport {
+  flex-grow: 1;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+.overview {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  padding-left: 10px;
+  padding-bottom: 30px;
+  background-color: var(--grisbajo);
+}
+.cards {
+  box-shadow: 0px 0px 10px #ccc;
+  width: 350px;
+  height: 250px;
+  margin:50px 18px 0px 18px;
+  transition: all 0.5s;
+  text-align: center;
+  border: 3px var(--naranja) solid;
+  position: relative;
+}
+.cards:hover {
+  box-shadow: 0px 0px 10px 0px;
+}
+
+.cards h1 {
+  margin-top: 30px;
+  padding: 15px 5px;
+  font-size: 30px;
+}
+.cards p {
+  padding: 0px 20px;
+  color: #333;
+  font-size: 20;
+}
+
+.cards .num_cards{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border: 2px var(--naranja);
+  color: white;
+  background-color:var(--naranja);
+  border-radius: 50%;
+  top: -25px;
+  left: calc(50% - 30px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+.menutabs{
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.menutabs li{
+  width: 33.33%;
+}
+
+.menutabs li a{
+  display: block;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  border: 1px var(--grisfuerte) solid;
+  color: #333;
+  transition: all .5s;
+}
+
+.menutabs li a:hover{
+  background-color: var(--naranja);
+}
+
+.activo{
+  background-color: var(--naranja);
+}
+
+#contenedor_tabs{
+  background-color: var(--grisbajo);
+  margin: 15px auto;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#contenedor_tabs article{
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+#contenedor_tabs article .tab_izq{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+
+#contenedor_tabs article .tab_izq figure{
+  width: 100%;
+  height: auto;
+  border: 2px var(--naranja) solid;
+  display: flex;
+  border: 10px var(--grismedio) solid;
+}
+
+#contenedor_tabs article .tab_izq figure img{
+  width: 100%;
+}
+
+#contenedor_tabs article .tab_izq .redes{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 20px;
+}
+
+#contenedor_tabs article .tab_izq .redes i{
+  margin: 10px;
+    color: var(--naranja);
+}
+
+#contenedor_tabs h2{
+  color: #333;
+  padding: 15px;
+}
+
+#contenedor_tabs article .tab_der{
+  width: 70%;
+  padding: 10px;
+}
+
+@media screen and (max-width:414px){
+  .cards {
+    width: 300px;
+    height: 200px;
+    margin:50px 15px;
+    transition: all 0.5s;
+    text-align: center;
+    border: 3px var(--naranja) solid;
+    position: relative;
+  }
+
+  .menutabs li a{
+    padding: 8px;
+    font-size: 10px;
+  }
+
+  #contenedor_tabs h2{
+    color: #333;
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  #contenedor_tabs h4{
+    font-size: 12px;
+  }
+
+  #contenedor_tabs p{
+    color: #333;
+    font-size: 12px;
+  }
+
+  #contenedor_tabs article .tab_izq{
+    padding: 0px;
+  }
+}
